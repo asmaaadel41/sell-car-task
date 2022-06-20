@@ -1,0 +1,344 @@
+.roboto-font{font-family:Roboto;}
+
+/*Start Header Section*/
+.header{
+    background-image: url('../images/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+    position: relative;
+    z-index: 4;
+}
+.header .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: .7;
+    z-index: 5;
+}
+
+/*Start Navbar Section*/
+.header .navbar{  
+    padding: 10px 0 15px;
+    background-color: #fff;
+    z-index: 10;
+}
+.header .navbar .navImage{width: 70%; margin-top: 5px;}
+.header .navbar .nav-btn{
+    margin-top: 5px;
+    width: 100px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 45px;
+    background-color: #EC1C24;
+    color: #fff;
+}
+.header .navbar .nav-btn:focus, .header .head-btn{
+    box-shadow: none;
+    outline: none;
+}
+
+.header .head-btn{
+    background-color: #EC1C24;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+}
+.header .head-btn span{
+    margin-right: 10px;
+    font-size: 16px;
+}
+/*End Navbar Section*/
+
+/*Start Header Section*/
+
+.header .head-item{
+    position: absolute;
+    bottom: -4%;
+    text-align: center;
+    left: 37%;
+    z-index: 6;
+}
+
+.header .head-text h2, .header .head-text h4{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.header .head-text h4{
+    font-size: 22px;
+}
+/* End Header section */
+
+
+/* Start Information Section*/
+.information{
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width:992px){
+    .information{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.information .left-side {
+    background-color: #323E47;
+    color: #fff;
+    padding: 50px;
+    width: 50%;
+}
+@media(max-width:992px){
+    .information .left-side  {
+        width: 100%;
+    }
+    .header .head-item { left: 30%;}
+
+}
+.information .work{
+    padding: 50px;
+}
+.information .work h2{
+    font-weight: bold;
+    font-size: 36px;
+}
+.information .nums {
+    margin-top: 40px;
+}
+.information .num1, .information .num2, .information .num3{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.information .num{
+    width: 30px;
+    height: 30px;
+    background-color: #EC1C24;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.information .num span{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.information .left-side .text h6{ font-size: 14px;}
+.information .text p {
+    font-size: 11px;
+}
+
+.information .right-side{
+    background-image: url('../images/red_side.png');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    width: 50%;
+    position: relative;
+    z-index: 1;
+}
+@media(max-width:992px){
+    .information .right-side{
+        width: 100%;
+    }
+
+}
+.information .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #EC1C24;
+    opacity: .7;
+    z-index: 2;
+}
+.information .right-side .div_content{
+    position: relative;
+    z-index: 3;
+    margin-top: 31%; 
+    color: #fff;
+}
+.information .right-side h2{ 
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.information .right-side p{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: .9;
+}
+/* End Information Section*/
+
+
+/* Start Prepare section */
+.prepare{
+    padding: 80px 220px;
+}
+.prepare h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.prepare .required ul{
+    list-style: none;
+}
+.prepare .required ul li{ color: #595F6F}
+.prepare .required ul li::before {
+    content: "\2022";
+    color: #EC1C24;
+    font-weight: bold;
+    display: inline-block;
+    width: 30px;
+    margin-left: -30px;
+    font-size: 25px;
+  }
+/* End Prepare section */
+
+/* Start Documentation Section */
+.documentation{
+    padding: 50px;
+    background-color: #F6FBFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.documentation .doc{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.documentation h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    
+}
+.documentation h4{
+    font-size: 20px;
+    color: #595F6F;
+}
+.documentation span{ font-size: 15px;}
+
+/* End Documentation Section */
+
+/* Start Footer Section */
+.footer{ padding: 12em; padding-bottom: 50px}
+
+.footer .foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer .foot .left-side, .footer .foot .right-side{
+    justify-content: space-around;
+}
+.footer .foot img{
+    width: 45%;
+    margin-bottom: 20px;
+}
+.footer .foot .left-side p{
+    color: #595F6F;
+    font-size: 14px;
+    padding-right: 101px;
+    line-height: 1.4;
+}
+.footer .foot .right-side p{
+    font-weight: 500;
+    margin-top: 25px;
+}
+.footer .foot ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .foot ul li{
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EC1C24;
+    color: #fff;
+    font-size: 20px;
+    line-height: 2;
+}
+.footer .right-side .face{
+    padding: 0 13px;
+}
+.footer .right-side .twitter,.footer .right-side .insta{
+    padding: 0 11px;
+}
+
+.footer .right-side .google, .footer .right-side .youtube{
+    padding: 0 8px;
+}
+/* End Footer Section */
+
+/* ///////////////////////////////////////////////// */
+
+/* Media Query */
+@media (min-width: 600px) and (max-width: 992px) { 
+    .footer{padding: 70px 30px 20px 30px;}
+    .footer .foot{flex-direction: column; text-align: center;}
+    .footer .foot .left-side p{padding: 5px; font-size: 10px;}
+    .footer .foot .right-side p {margin-top: 0}
+    .footer .foot ul{display: inline-flex;}
+    .information .left-side, .information .work{ padding: 0;}
+    .information .work{
+        margin-top: 60px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+    .information .right-side .div_content{
+     margin-top: 0;
+     padding: 50px 0;
+     }
+     .information .right-side h2{ font-size: 16px;}
+     .information .right-side p {font-size: 11px}
+     .documentation{padding: 50px 0;}
+     .prepare{padding: 0;}
+     
+}
+@media (max-width: 600px){
+   .header .navbar {padding: 10px 15px 15px 0;}
+   .header .navbar .navImage{ padding: 0 15px;}
+   .header .navbar .navImage{ width: 80%;}    
+   .header .navbar .nav-btn { margin-right: 20px;}
+   .header .head-item { left: 13%;}
+   .information{ flex-direction: column;}
+   .information .left-side, .information .right-side{ width: auto;}
+   .information .left-side, .information .work{ padding: 0;}
+   .information .work{
+       margin-top: 60px;
+       margin-bottom: 50px;
+       margin-left: 50px;
+   }
+   .information .right-side .div_content{
+    margin-top: 0;
+    padding: 50px 0;
+    }
+    .information .right-side h2{ font-size: 16px;}
+    .information .right-side p {font-size: 11px}
+    .documentation{padding: 50px 0;}
+    .documentation h2 {font-size: 12px; font-weight: bold;}
+    .documentation h4{font-size: 13px;}
+    .documentation span{font-size: 7px;}
+    .prepare{padding: 0;}
+    .footer{padding: 70px 30px 20px 30px;}
+    .footer .foot{flex-direction: column; text-align: center;}
+    .footer .foot .left-side p{padding: 5px; font-size: 10px;}
+    .footer .foot .right-side p {margin-top: 0}
+    .footer .foot ul{display: inline-flex;}
+}
